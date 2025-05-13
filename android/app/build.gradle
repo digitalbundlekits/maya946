@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace "com.miramatka.app"
+
+    // Suggested stable SDK versions as of mid-2023
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.miramatka.app"
+
+        // Example minSdk & targetSdk
+        minSdkVersion 22
+        targetSdkVersion 34
+
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        aaptOptions {
+            // Files and dirs to omit from the packaged assets dir, modified for modern web apps.
+            ignoreAssetsPattern '!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs '../capacitor-cordova-android-plugins/src/main/libs', 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    // Explicit versions for AndroidX libraries
+    implementation "androidx.appcompat:appcompat:1.6.1"                       // or newer stable (e.g. 1.6.1)
+    implementation "androidx.coordinatorlayout:coordinatorlayout:1.2.0"
+    implementation "androidx.core:core-splashscreen:1.0.1"
+    implementation 'com.onesignal:OneSignal:[5.0.0, 5.99.99]'
+    // Capacitor Android core
+    implementation project(':capacitor-android')
+
+    // Testing libraries
+    testImplementation "junit:junit:4.13.2"
+    androidTestImplementation "androidx.test.ext:junit:1.1.5"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.5.1"
+
+    // Aggregated Cordova plugins (e.g., onesignal-cordova-plugin, etc.)
+    implementation project(':capacitor-cordova-android-plugins')
+}
+
+// Include extra Capacitor config or plugin resolution
+apply from: 'capacitor.build.gradle'
+
+// Optional Google Services plugin for Firebase-based push
+try {
+    def servicesJSON = file('google-services.json')
+    if (servicesJSON.text) {
+        apply plugin: 'com.google.gms.google-services'
+    }
+} catch(Exception e) {
+    logger.info("google-services.json not found, google-services plugin not applied. Push Notifications won't work")
+}

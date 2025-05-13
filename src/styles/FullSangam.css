@@ -1,0 +1,192 @@
+/* Container Styling */
+.full-sangam-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    width: 34px;
+    height: 34px;
+    background-color: #046a38;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-button:hover {
+    background-color: #034d2c;
+}
+
+.balance {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #046a38;
+}
+
+/* Input Section */
+.input-section {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background-color: #f9f9f9;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #046a38;
+    box-shadow: 0 0 5px rgba(4, 106, 56, 0.5);
+}
+
+/* Add Bid Button */
+.add-bid-button {
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.add-bid-button:hover {
+    background-color: #3e8e41;
+}
+
+
+.bid-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.bid-table th,
+.bid-table td {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+}
+
+.bid-table th {
+    background-color: #046a38;
+    color: white;
+    font-weight: bold;
+}
+
+.bid-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.bid-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Bottom Bar */
+.bottom-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.submit-button {
+    background-color: #046a38;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.submit-button:hover:not(:disabled) {
+    background-color: #034d2c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .full-sangam-container {
+        padding: 10px;
+    }
+
+    .input-group input,
+    .input-group select {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .add-bid-button,
+    .submit-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .bid-table th,
+    .bid-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .balance {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,110 @@
+.payment-confirmation-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .payment-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .amount-title {
+    font-size: 24px;
+    color: #FF671F;
+  }
+  
+  .transaction-details {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transaction-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .transaction-details span {
+    font-weight: bold;
+  }
+  
+  .copy-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .copy-buttons button {
+    background-color: #FF671F;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .copy-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  .upload-section {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .utr-input,
+  .screenshot-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .status-steps {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .status-steps .step {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin: 0 5px;
+    font-size: 14px;
+  }
+  
+  .status-steps .step.active {
+    background-color: #FF671F;
+    color: #fff;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF671F;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  

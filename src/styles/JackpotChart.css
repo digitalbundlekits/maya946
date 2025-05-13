@@ -1,0 +1,127 @@
+/* Full Page Styling */
+.jcharts-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    padding-top: 70px; /* Space for fixed header */
+}
+
+/* Header Styling */
+.jcharts-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF671F;
+    color: #fff;
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.jcharts-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.jcharts-gback-button {
+    position: absolute;
+    left: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.jcharts-go-to-bottom,
+.jcharts-back-to-top,
+.jcharts-go-back {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.jcharts-go-to-bottom:hover,
+.jcharts-back-to-top:hover,
+.jcharts-go-back:hover {
+    background-color: #e68900;
+}
+
+
+/* Chart Container */
+.jcharts-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.jcharts-subheader {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0 20px;
+}
+
+/* "Go to Bottom" Button */
+.jcharts-go-to-bottom {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Table Styling */
+.jcharts-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.jcharts-table th,
+.jcharts-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.jcharts-table th {
+    background-color: #FF671F;
+    color: #fff;
+    font-weight: bold;
+}
+
+.jcharts-date-range {
+    font-weight: bold;
+    color: #555;
+}
+
+.jcharts-cell-content {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.jcharts-highlight {
+    color: #e53935;
+}

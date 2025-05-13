@@ -1,0 +1,155 @@
+/* Full Page Styling */
+.chart-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    padding-top: 50px; /* Space for fixed header */
+}
+
+/* Header Styling */
+.chart-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF671F;
+    color: #fff;
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.chart-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.chart-gback-button {
+    position: absolute;
+    left: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* .chart-go-to-bottom,
+.chart-back-to-top {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: -13px;
+}
+
+.chart-go-to-bottom:hover,
+.chart-back-to-top:hover {
+    background-color: #e68900;
+} */
+
+.chart-go-to-bottom,
+.chart-back-to-top,
+.chart-go-back {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.chart-go-to-bottom:hover,
+.chart-back-to-top:hover,
+.chart-go-back:hover {
+    background-color: #e68900;
+}
+
+
+
+/* Chart Container */
+.chart-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: center;
+    margin-top: -33px;
+}
+
+.chart-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.chart-table th,
+.chart-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.chart-table th {
+    background-color: #FF671F;
+    color: #fff;
+    font-weight: bold;
+}
+
+.chart-date-range {
+    font-weight: bold;
+    color: #555;
+}
+
+.chart-cell-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.chart-primary,
+.chart-middle,
+.chart-secondary {
+    font-weight: bold;
+}
+
+.chart-middle {
+    color: #333;
+}
+
+.highlight-red {
+    color: red;
+}
+
+/* Go to Bottom Button */
+.chart-go-to-bottom {
+    margin: 20px 0; /* Adds spacing between the header and the button */
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

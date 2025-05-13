@@ -1,0 +1,136 @@
+.jodi-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.jgback-button {
+    width: 34px;
+    height: 34px;
+    background-color: #046a38;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 10px;
+}
+
+.balance {
+    display: flex;
+    align-items: center;
+}
+
+.wallet-icon {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.row-selector {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+
+.row-button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.row-button.active {
+    background-color: #ff751a;
+}
+
+.jodi-inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.jodi-input {
+    position: relative;
+    border: 1px solid #4caf50;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.jodi-label {
+    font-weight: bold;
+    color: #4caf50;
+}
+
+.bottom-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #4caf50;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: #4caf50;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Modal Styling */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.review-modal {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.review-modal h3 {
+    background: #4caf50;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+}

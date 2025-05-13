@@ -1,0 +1,134 @@
+/* Full Page Centering */
+.scharts-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    padding-top: 70px; /* Space to avoid overlap with fixed header */
+}
+
+/* Header Styling */
+.scharts-header {
+    position: fixed; /* Make header fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF671F;
+    color: #fff;
+    padding: 15px 0;
+    z-index: 1000; /* Ensure it stays above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
+
+.scharts-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.scharts-gback-button {
+    position: absolute;
+    left: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.scharts-go-to-bottom,
+.scharts-go-to-top,
+.scharts-go-back {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.scharts-go-to-bottom:hover,
+.scharts-go-to-top:hover,
+.scharts-go-back:hover {
+    background-color: #e68900;
+}
+
+
+/* Chart Container */
+.scharts-container {
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.scharts-subheader {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0 20px;
+}
+
+/* "Go to Bottom" Button */
+.scharts-go-to-bottom {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Table Styling */
+.scharts-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.scharts-table th,
+.scharts-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.scharts-table th {
+    background-color: #FF671F;
+    color: #fff;
+    font-weight: bold;
+}
+
+.scharts-date-range {
+    font-weight: bold;
+    color: #555;
+}
+
+.scharts-cell-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.scharts-primary,
+.scharts-secondary {
+    font-weight: bold;
+}
+
+.scharts-secondary {
+    color: #333;
+}

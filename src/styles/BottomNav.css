@@ -1,0 +1,66 @@
+/* General Bottom Navigation Styling */
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 0;
+    /* box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); */
+    position: fixed;
+    bottom: -4px;
+    width: 100%;
+    z-index: 10;
+    margin-left: -10px;
+    margin-bottom: 0px;
+}
+
+/* Each Navigation Item */
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+/* Hover Effect for Navigation Items */
+.nav-item:hover {
+    color: #FF671F; /* Hover Color */
+}
+
+/* Icon Styling */
+.nav-icon {
+    width: 25px; /* Default Icon Size */
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+/* Larger Icon for Home */
+.large-icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* Home Button Styling */
+.home-icon {
+    background-color: #FF671F; /* Orange Background */
+    border-radius: 50%; /* Circular Shape */
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 3px; /* Elevates the Home Icon */
+}
+
+/* Ensure Home Icon Image Stays Inside */
+.home-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Text for Each Navigation Item */
+.nav-item span {
+    margin-top: 5px;
+}

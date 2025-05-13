@@ -1,0 +1,176 @@
+/* Register Page Container */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.logo {
+    width: 128px;
+    margin-bottom: -4px;
+    background-color: #ffff;
+    border-radius: 6px;
+}
+
+.logo1 {
+    width: 236px;
+    margin-bottom: -4px;
+    border-radius: 6px;
+}
+
+.logo2 {
+    width: 264px;
+    margin-bottom: -4px;
+    border-radius: 6px;
+    margin-left: 60px;
+    margin-top: 200px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+    margin-top: -2px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Input Field Styles */
+.input-field {
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.icon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #FF671F;
+    position: absolute;
+    left: 15px;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    flex: 1;
+    padding: 10px;
+    padding-left: 35px; /* Add padding to make space for the icon */
+}
+
+/* Button Styles */
+.register-btn,
+.login-link {
+    background-color: #FF671F;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.register-btn:hover,
+.login-link:hover {
+    background-color: #e67e22;
+}
+
+/* Error and Success Message Styles */
+.error {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.success {
+    color: green;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* OTP Popup Overlay */
+.otp-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* OTP Popup Box */
+.otp-popup {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.otp-popup h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.otp-popup input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* OTP Verify Button */
+.verify-btn {
+    padding: 10px 20px;
+    background-color: #FF671F;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.verify-btn:hover {
+    background-color: #e67e22;
+}
+
+/* OTP Popup Close Button */
+.close-btn {
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.close-btn:hover {
+    background-color: #b3b3b3;
+}

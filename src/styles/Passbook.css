@@ -1,0 +1,88 @@
+/* src/styles/Passbook.css */
+
+.passbook-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-right: 8px;
+  margin-left: 10px;
+}
+
+.passbook-container { 
+  flex: 1; /* Takes up remaining space between Header and BottomNav */
+  padding: 80px 20px 80px 20px; /* Top and bottom padding to account for Header and BottomNav */
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.passbook-container h2 {
+  text-align: center;
+  color: #333;
+}
+
+.passbook-table {
+  width: 104%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.passbook-table th, .passbook-table td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.passbook-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.passbook-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.no-data, .no-transactions {
+  text-align: center;
+  color: #555;
+  margin-top: 20px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 120px); /* Full viewport height minus Header and BottomNav heights */
+  background-color: #f9f9f9;
+  font-size: 1.5em;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .passbook-container {
+      margin-left: -14px;
+        margin-right: -10px;
+        margin-top: -77px;
+  }
+
+  .passbook-table th, .passbook-table td {
+      padding: 8px;
+      font-size: 14px;
+  }
+
+  .passbook-table th {
+      font-size: 1rem;
+  }
+
+  .passbook-container h2 {
+      font-size: 1.5rem;
+  }
+}

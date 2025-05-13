@@ -1,0 +1,155 @@
+/* General Container Styles */
+.starline-container {
+    font-family: Arial, sans-serif;
+    padding: 16px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.stgback-button {
+    width: 34px;
+    height: 34px;
+    background-color: #046a38;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+/* Games List */
+.games-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Game Card */
+.game-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section */
+.game-left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.game-time {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.clock-icon {
+    font-size: 3.5rem;
+    color: #666;
+}
+
+.game-status {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.game-status.running {
+    color: #28a745;
+    margin-left: 72px;
+    margin-top: -27px; /* Green */
+}
+
+.game-status.open {
+    color: #078bff;
+    margin-left: 72px;
+    margin-top: -27px; /* Yellow */
+}
+
+.game-status.closed {
+    color: #dc3545;
+    margin-left: 72px;
+    margin-top: -27px;
+}
+
+/* Right Section */
+.game-right {
+    display: flex;
+    flex-direction: column; /* Stack result, button, and text vertically */
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between result, button, and text */
+}
+
+/* Game Result */
+.game-result {
+    background-color: #333;
+    color: #FF671F;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Play Button */
+.play-button {
+    background-color: #FF671F;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.play-button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.play-button:not(:disabled):hover {
+    background-color: #e89a20;
+}
+
+/* Play Text */
+.play-text {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}

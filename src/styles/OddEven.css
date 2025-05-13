@@ -1,0 +1,128 @@
+.odd-even-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ogback-button {
+    width: 34px;
+    height: 34px;
+    background-color: #046a38;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 10px;
+}
+
+.balance {
+    display: flex;
+    align-items: center;
+}
+
+.wallet-icon {
+    width: 24px;
+    margin-right: 8px;
+}
+
+.game-type-selector {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.selection {
+    margin: 20px 0;
+    display: flex
+;
+    gap: 20px;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.points-input {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.add-bid-button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.bets-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.bets-table th,
+.bets-table td {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+}
+
+.remove-bid {
+    
+    /* color: white; */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.bottom-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+}
+
+.submit-button {
+    background-color: #046A38;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.points-input1 {
+    display: flex
+;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.balancemn {
+    display: flex
+;
+    align-items: center;
+    margin-left: 49px;
+}

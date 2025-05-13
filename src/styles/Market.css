@@ -1,0 +1,152 @@
+/* Market Card */
+/* .market-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+  font-family: Arial, sans-serif;
+} */
+
+.market-card {
+  display: flex
+;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 55px 83px #c6b9a2;
+  padding: 10px;
+  margin-bottom: 7px;
+  font-family: Arial, sans-serif;
+}
+
+/* Left Section: Market Info */
+.market-info {
+  flex: 1;
+  text-align: left;
+}
+
+.market-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.market-number {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #FF671F;
+  margin-bottom: 10px;
+}
+
+/* Bid Times Row */
+.market-times {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.bid-row {
+  display: flex;
+  gap: 25px;
+}
+
+.bid-info {
+  text-align: left;
+}
+
+.bid-info span:first-child {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #666;
+  display: block;
+}
+
+.bid-time {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Right Section: Market Action */
+.market-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  margin-left: 15px;
+}
+
+.market-status {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.market-status.closed {
+  color: red;
+}
+
+.market-status.open {
+  color: #046A38;
+}
+
+/* Play Button */
+.play-btn {
+  background-color: #FF671F;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: flex-start; /* Align icon towards the top */
+  justify-content: center;
+  font-size: 1.9rem;
+  cursor: pointer;
+  padding-top: 3px; /* Adjust icon position vertically */
+  padding-left: 8px; /* Adjust icon position horizontally */
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.play-btn:hover {
+  background-color: #e89a20;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.play-btn.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.play-text {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 8px; /* Adjust spacing for better alignment */
+  text-align: center; /* Center-align the text */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .market-card {
+      flex-direction: row;
+      align-items: flex-start;
+  }
+
+  .market-times {
+      gap: 10px;
+  }
+
+  .market-action {
+      align-items: flex-end;
+  }
+}

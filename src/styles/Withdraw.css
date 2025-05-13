@@ -1,0 +1,99 @@
+.withdraw-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.wgback-button {
+    width: 34px;
+    height: 34px;
+    background-color: #046a38;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 10px;
+}
+
+.balance-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.wallet-icon-container {
+    background-color: #ffd966;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.wallet-icon {
+    width: 40px;
+    height: 40px;
+}
+
+h3 {
+    font-size: 32px;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    color: gray;
+}
+
+.input-section input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.withdraw-button {
+    background-color: #ff671f;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.withdraw-button:hover {
+    background-color: #ff8c00;
+}
+.ggdback-buttons,
+.back-buttonms {
+  background: none;
+  border: none;
+  padding: 5px;
+  margin-right: 10px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.ggdback-buttons img,
+.back-buttonms img {
+  width: 24px;
+  height: 24px;
+}

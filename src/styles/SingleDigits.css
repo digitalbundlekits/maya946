@@ -1,0 +1,205 @@
+.single-digits-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* In your CSS */
+.digit-inputs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .zero-container {
+    grid-column: 1 / -1; /* Span all columns */
+    display: flex;
+    justify-content: center;
+    width: 31%;
+    margin-left: 119px;
+  }
+  
+  /* Existing styles remain the same, add these media queries */
+  @media (max-width: 768px) {
+    .digit-inputs {
+      grid-template-columns: repeat(3, minmax(80px, 1fr));
+    }
+    
+    .digit-input input {
+      font-size: 14px;
+      padding: 4px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .digit-inputs {
+      gap: 5px;
+    }
+    
+    .digit-input {
+      padding: 5px;
+    }
+  }
+
+.sdgback-button {
+    width: 34px;
+    height: 34px;
+    background-color: #046a38;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 10px;
+}
+
+.balance {
+    display: flex;
+    align-items: center;
+}
+
+.wallet-icon {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.game-type-selector {
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.digit-inputs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.digit-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #4caf50;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.digit-input input {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ccc;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.bottom-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #4caf50;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: #4caf50;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.review-modal {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.review-modal h3 {
+    background: #4caf50;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.review-modal table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.review-modal th, .review-modal td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.review-summary {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cancel-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirm-button {
+    background-color: #046A38;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

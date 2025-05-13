@@ -1,0 +1,90 @@
+/* src/styles/Funds.css */
+
+.funds-container {
+    padding: 20px;
+    background-color: #f4f4f4;
+    height: 100vh;
+}
+
+.funds-header {
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 51px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    margin-left: -17px;
+    margin-right: -19px;
+}
+
+.fgback-button {
+    width: 34px;
+    height: 34px;
+    background-color: #046a38;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 10px;
+}
+
+.header-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.wallet-info {
+    display: flex;
+    align-items: center;
+}
+
+.wallet-icon {
+    width: 21px;
+    height: 21px;  /* Wallet icon size */
+    margin-right: 8px;
+}
+
+.funds-options {
+    margin-top: 20px;
+}
+
+.fund-option {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.option-icon {
+    width: 35px;
+    height: 35px;  /* Icons for each fund action */
+    margin-right: 15px;
+}
+
+.option-details {
+    flex: 1;
+}
+
+.option-title {
+    font-weight: bold;
+}
+
+.option-description {
+    color: #999;
+}
+
+.option-arrow {
+    font-size: 24px;
+    color: #FF671F;
+}

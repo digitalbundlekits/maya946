@@ -1,0 +1,106 @@
+.select-payment-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.payment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sgback-button, .help-button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #FF671F;
+  cursor: pointer;
+}
+
+.header-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.amount-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.recharge-label {
+  font-size: 16px;
+  color: #666;
+}
+
+.recharge-amount {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.upi-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.upi-label {
+  font-size: 14px;
+  color: #333;
+}
+
+.change-upi-button {
+  background-color: #FF671F;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.payment-method-section {
+  margin-top: 20px;
+}
+
+.payment-method-label {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.payment-method-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment-option {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.payment-option.selected {
+  border-color: #FF671F;
+  background-color: #e6f7ff;
+}
+
+.tips-section {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.proceed-button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #FF671F;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
